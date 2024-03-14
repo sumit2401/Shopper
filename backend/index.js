@@ -349,6 +349,7 @@ app.post("/getcart", fetchUser, async (req, res) => {
   res.json(userData.cartData);
 });
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.listen(port, (error) => {
   if (!error) {
     console.log("Server Running on Port " + port);
